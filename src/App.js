@@ -1,24 +1,24 @@
-import React from "react";
-import ImageCard from "./components/Imagecard";
-import galleryData from "./components/galleryData";
-import "./App.css";
+import logo from './logo.svg';
+import './App.css';
 
 function App() {
   return (
-    <>
-      <h1 className="title">Image Gallery</h1>
-
-      <div className="gallery">
-        {galleryData.map((item) => (
-          <ImageCard
-            key={item.id}
-            title={item.title}
-            description={item.description}
-            image={item.image}
-          />
-        ))}
-      </div>
-    </>
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
   );
 }
 
